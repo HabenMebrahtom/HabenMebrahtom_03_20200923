@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA; 
+$tertiary-color: #99E2D0;
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    padding: 30px auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo {
+        font-family: 'Shrikhand', cursive;
+        font-size: 30px;  
+        
+    }
+}
+
+.sub-header {
+    width: 100%;
+    height: 35%;
+    background-color: #f1e9e9;
+    .company-location {
+        background-color: rgb(230, 224, 224);
+        width: 100%;
+        height: 40px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            padding-right: 20px;
+            font-weight: bold;
+        }
+        
+    }
+
+ .booking-menu {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding-bottom: 50px;
+     button {
+         color: white;
+         border-style: none;
+         padding: 15px;
+         background-color: $primary-color;
+         box-shadow: inset -7px -56px 84px 2px $secondary-color;
+         border: 0px solid none;
+         border-radius: 25px;
+         font-weight: bold;
+         
+         &:focus{
+             outline: 1px solid transparent;
+             border-radius: 25px;
+             
+         }
+     }
+ }
+}
+
+nav {
+    padding: 20px;
+    h1 {
+        padding-left: 20px;
+    }
+}
+
+.nav {
+    border: 1px solid transparent;
+    width: 300px;
+    height: 70px;
+    background-color: rgb(238, 234, 234);
+    box-shadow: 36px 58px 62px -61px rgba(135,134,138,1);
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    i {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.list-number {
+    width: 20px; 
+    height: 20px;
+    margin-left: -10px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurants {
+    background-color: rgb(224, 222, 222);
+    padding: 40px auto;
+    #restaurants {
+        position: relative;
+        top: 20px;
+        left: 10%;
+    }
+    
+   .restaurants-list {
+       display: flex; 
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+   } 
+}   
+
+
+
+
+
+
+
+
+.restaurant {
+    margin: 20px auto;
+    width: 80%;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: white;
+    img {
+        width: 100%;
+        height: 70%;
+        border: 0px solid transparent;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .restaurant-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        #restaurant-name{
+            padding-left: 20px;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+        .heart-icon {
+            margin: 20px;
+            font-size: 2rem;
+            i:hover {
+            font-weight: bolder;
+            color: $primary-color;
+            }
+        }
+    }
+    
+}
+
+#bold-text {
+    font-weight:  bolder;
+}
+
+footer {
+    background-color: #3b3939;
+    color: white;
+    width: 100%;
+    height: 200px;
+}
+
+.footer-logo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 10px;
+    margin: 20px auto;
+    padding-left: 30px;
+}
+
+.footer-content {
+    padding: 20px;
+    li {
+        list-style: none;
+     a {
+         color: white;
+         text-decoration: none;
+         
+     }
+    }
+
+}
+
+

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header .fa-arrow-left {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  font-size: 1.5rem;
+  font-weight: 700px;
+  text-decoration: none;
+}
+
+header .logo {
+  font-family: 'Shrikhand', cursive;
+}
+
+.image img {
+  width: 100%;
+  height: 200px;
+}
+
+main {
+  background-color: #ddd3d3;
+  border: 1px solid transparent;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  margin-top: -40px;
+  width: 100%;
+}
+
+main .restaurant-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+}
+
+main .restaurant-name h1 {
+  font-family: 'Shrikhand', cursive;
+  position: relative;
+  top: 20px;
+  left: 5%;
+}
+
+main .restaurant-name i {
+  position: relative;
+  top: 30px;
+  right: 5%;
+  font-size: 2rem;
+}
+
+main .menu-list .menu-list__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .menu-list .menu-list__content .food-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 90%;
+  margin: 10px auto;
+  border: 0px solid transparent;
+  border-radius: 20px;
+  background-color: white;
+}
+
+main .menu-list .menu-list__content .food-list .food-list__name {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  margin: 10px auto 10px 10px;
+}
+
+main .menu-list .menu-list__content .food-list .food-list__price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .menu-list .menu-list__content .food-list .checked-icone {
+  position: relative;
+  width: 60px;
+  height: 100%;
+  background-color: #79bbab;
+  border: 1px solid transparent;
+  border-radius: 0px 20px 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.menu-type h3 {
+  padding-left: 5%;
+}
+
+.menu-type hr {
+  width: 45px;
+  background-color: #79bbab;
+  border: none;
+  margin-top: -8px;
+  height: 2px;
+  position: absolute;
+  left: 5%;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn button {
+  padding: 15px 60px;
+  margin: 20px auto;
+  -webkit-box-shadow: inset 36px 58px 62px 16px #9356DC;
+          box-shadow: inset 36px 58px 62px 16px #9356DC;
+  border: 0px solid transparent;
+  border-radius: 35px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.btn button:focus {
+  outline: 0px solid transparent;
+}
+
+footer {
+  background-color: #3b3939;
+  color: white;
+  width: 100%;
+  height: 200px;
+}
+
+.footer-logo {
+  font-family: 'Shrikhand', cursive;
+  font-size: 10px;
+  margin: 10px auto;
+  padding-left: 30px;
+}
+
+.footer-content {
+  padding: 10px;
+}
+
+.footer-content li {
+  list-style: none;
+}
+
+.footer-content li a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA; 
+$tertiary-color: #79bbab;
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+    }
+    .fa-arrow-left {
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        font-size: 1.5rem;
+        font-weight: 700px;
+        text-decoration: none;      
+    }
+    .logo {
+        font-family: 'Shrikhand', cursive; 
+    }
+}
+
+.image {
+    img {
+        width: 100%;
+        height: 200px;
+    }   
+}
+main { 
+    background-color: rgb(221, 211, 211);
+    border: 1px solid transparent;
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    margin-top: -40px;
+    width: 100%; 
+
+    .restaurant-name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        h1 {
+            font-family: 'Shrikhand', cursive;
+            position: relative;
+            top: 20px;
+            left: 5%;
+        }
+        i {
+            position: relative;
+            top: 30px;
+            right: 5%;
+            font-size: 2rem ;
+        }
+    }
+
+  
+    .menu-list {
+        
+    .menu-list__content { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+          .food-list {
+            display:flex;
+            justify-content: start;
+            align-items: center;
+            height: 100px;
+            width: 90%;
+            margin: 10px auto;
+            border: 0px solid transparent;
+            border-radius: 20px;
+            background-color: white;
+            .food-list__name {
+                flex: 4;
+                margin: 10px auto 10px 10px;
+                
+            }
+            .food-list__price {
+                flex: 1;
+            }
+            .checked-icone{
+                position: relative;
+                width: 60px;
+                height: 100%;
+                background-color: $tertiary-color;
+                border: 1px solid transparent;
+                border-radius: 0px 20px 20px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                color: white;
+                font-size: 2rem;
+
+            }
+
+        }
+      }
+    }
+}
+
+.menu-type{
+    
+    h3 {
+         padding-left: 5%; 
+    } 
+        hr{
+           width: 45px;
+            background-color: $tertiary-color;
+            border: none;
+            margin-top: -8px;
+            height: 2px;
+            position: absolute;
+            left: 5%;
+
+            
+          
+            
+    }
+    
+
+} 
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        padding: 15px 60px;
+        margin: 20px auto;
+        box-shadow: inset 36px 58px 62px 16px $primary-color;
+        border: 0px solid transparent;
+        border-radius: 35px;
+        color: white;
+        font-size: 1.5rem;
+        &:focus {
+            outline: 0px solid transparent;
+        }
+    }
+
+    
+ }
+
+
+
+footer {
+    background-color: #3b3939;
+    color: white;
+    width: 100%;
+    height: 200px;
+}
+
+.footer-logo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 10px;
+    margin: 10px auto;
+    padding-left: 30px;
+}
+
+  .footer-content{
+    padding: 10px;
+    li {
+        list-style: none;
+     a {
+        color: white;
+         text-decoration: none;
+
+         
+     }
+    }
+  }
