@@ -118,7 +118,10 @@ main .menu-list .menu-list__content .food-list {
   border: 0px solid transparent;
   border-radius: 20px;
   background-color: white;
+  -webkit-box-shadow: 2px 14px 41px -13px #666165;
+          box-shadow: 2px 14px 41px -13px #666165;
   overflow: hidden;
+  cursor: pointer;
 }
 
 main .menu-list .menu-list__content .food-list:hover {
@@ -231,8 +234,10 @@ main .menu-list .menu-list__content .food-list .checked-icone i {
 .btn button {
   padding: 15px 60px;
   margin: 20px auto;
-  -webkit-box-shadow: inset 36px 58px 62px 16px #9356DC;
-          box-shadow: inset 36px 58px 62px 16px #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 5px -1px 143px -45px #d4d4d4;
+          box-shadow: 5px -1px 143px -45px #d4d4d4;
   border: 0px solid transparent;
   border-radius: 35px;
   color: white;
@@ -241,6 +246,8 @@ main .menu-list .menu-list__content .food-list .checked-icone i {
 
 .btn button:focus {
   outline: 0px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#79bbab));
+  background: linear-gradient(#9356DC, #FF79DA, #79bbab);
 }
 
 footer {

@@ -74,18 +74,26 @@ header .logo {
 .sub-header .booking-menu button {
   color: white;
   border-style: none;
-  padding: 15px;
-  background-color: #9356DC;
-  -webkit-box-shadow: inset -7px -56px 84px 2px #FF79DA;
-          box-shadow: inset -7px -56px 84px 2px #FF79DA;
+  padding: 15px 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 5px -1px 143px -45px #d4d4d4;
+          box-shadow: 5px -1px 143px -45px #d4d4d4;
   border: 0px solid none;
   border-radius: 25px;
   font-weight: bold;
+  font-size: 1rem;
+}
+
+.sub-header .booking-menu button a {
+  text-decoration: none;
+  color: white;
 }
 
 .sub-header .booking-menu button:focus {
   outline: 1px solid transparent;
-  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
+  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
 }
 
 nav {
@@ -101,8 +109,8 @@ nav h1 {
   width: 300px;
   height: 70px;
   background-color: #eeeaea;
-  -webkit-box-shadow: 36px 58px 62px -61px #87868a;
-          box-shadow: 36px 58px 62px -61px #87868a;
+  -webkit-box-shadow: 2px 14px 41px -11px #666165;
+          box-shadow: 2px 14px 41px -11px #666165;
   margin: 5px;
   border-radius: 20px;
   display: -webkit-box;
@@ -117,8 +125,8 @@ nav h1 {
 }
 
 .nav i {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .nav-list {
@@ -187,6 +195,8 @@ nav h1 {
   border: 1px solid transparent;
   border-radius: 10px;
   background-color: white;
+  -webkit-box-shadow: 2px 14px 41px -13px #666165;
+          box-shadow: 2px 14px 41px -13px #666165;
 }
 
 .restaurant img {
@@ -224,7 +234,7 @@ nav h1 {
 
 .restaurant .restaurant-info .heart-icon i:hover {
   font-weight: bolder;
-  color: #9356DC;
+  color: #FF79DA;
 }
 
 #bold-text {

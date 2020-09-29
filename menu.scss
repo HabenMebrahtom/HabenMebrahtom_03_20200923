@@ -91,7 +91,9 @@ main {
             border: 0px solid transparent;
             border-radius: 20px;
             background-color: white;
+            box-shadow: 2px 14px 41px -13px rgba(102,97,101,1);
             overflow: hidden;
+            cursor: pointer;
             &:hover {
                 color: $primary-color;
                 & > .food-list__price {
@@ -176,13 +178,15 @@ main {
     button {
         padding: 15px 60px;
         margin: 20px auto;
-        box-shadow: inset 36px 58px 62px 16px $primary-color;
+        background: linear-gradient($secondary-color, $primary-color);
+        box-shadow: 5px -1px 143px -45px rgba(212,212,212,1);
         border: 0px solid transparent;
         border-radius: 35px;
         color: white;
         font-size: 1.5rem;
         &:focus {
             outline: 0px solid transparent;
+            background: linear-gradient($primary-color, $secondary-color, $tertiary-color);
         }
     }
 
