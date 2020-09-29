@@ -27,7 +27,7 @@ header a {
 }
 
 header .fa-arrow-left {
-  position: fixed;
+  position: absolute;
   top: 30px;
   left: 30px;
   font-size: 1.5rem;
@@ -80,6 +80,13 @@ main .restaurant-name i {
   font-size: 2rem;
 }
 
+main .restaurant-name i:hover {
+  font-weight: bolder;
+  color: #FF79DA;
+  -webkit-box-shadow: linear-gradient(to right, #9356DC);
+          box-shadow: linear-gradient(to right, #9356DC);
+}
+
 main .menu-list .menu-list__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,33 +112,50 @@ main .menu-list .menu-list__content .food-list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
+  height: 120px;
   width: 90%;
   margin: 10px auto;
   border: 0px solid transparent;
   border-radius: 20px;
   background-color: white;
+  overflow: hidden;
+}
+
+main .menu-list .menu-list__content .food-list:hover {
+  color: #9356DC;
+}
+
+main .menu-list .menu-list__content .food-list:hover > .food-list__price {
+  -webkit-animation: slide 500ms linear both;
+          animation: slide 500ms linear both;
+}
+
+main .menu-list .menu-list__content .food-list:hover > .checked-icone {
+  -webkit-animation: slide 500ms linear both;
+          animation: slide 500ms linear both;
+}
+
+main .menu-list .menu-list__content .food-list:hover > .checked-icone i {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
 }
 
 main .menu-list .menu-list__content .food-list .food-list__name {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
   margin: 10px auto 10px 10px;
 }
 
 main .menu-list .menu-list__content .food-list .food-list__price {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 main .menu-list .menu-list__content .food-list .checked-icone {
   position: relative;
-  width: 60px;
+  width: 80px;
   height: 100%;
+  margin-left: 20px;
   background-color: #79bbab;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-radius: 0px 20px 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,6 +169,37 @@ main .menu-list .menu-list__content .food-list .checked-icone {
   font-size: 1.5rem;
   color: white;
   font-size: 2rem;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+main .menu-list .menu-list__content .food-list .checked-icone i {
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 
 .menu-type h3 {
@@ -155,7 +210,7 @@ main .menu-list .menu-list__content .food-list .checked-icone {
   width: 45px;
   background-color: #79bbab;
   border: none;
-  margin-top: -8px;
+  margin-top: -15px;
   height: 2px;
   position: absolute;
   left: 5%;

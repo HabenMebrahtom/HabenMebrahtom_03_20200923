@@ -22,7 +22,7 @@ header {
         text-decoration: none;
     }
     .fa-arrow-left {
-        position: fixed;
+        position: absolute;
         top: 30px;
         left: 30px;
         font-size: 1.5rem;
@@ -65,6 +65,12 @@ main {
             right: 5%;
             font-size: 2rem ;
         }
+
+        i:hover {
+            font-weight: bolder;
+            color: $secondary-color;
+            box-shadow: linear-gradient(to right, $primary-color);
+        }
     }
 
   
@@ -79,26 +85,40 @@ main {
             display:flex;
             justify-content: start;
             align-items: center;
-            height: 100px;
+            height: 120px;
             width: 90%;
             margin: 10px auto;
             border: 0px solid transparent;
             border-radius: 20px;
             background-color: white;
-            .food-list__name {
-                flex: 4;
-                margin: 10px auto 10px 10px;
-                
+            overflow: hidden;
+            &:hover {
+                color: $primary-color;
+                & > .food-list__price {
+                    animation: slide 500ms linear both;
+                }
+                & > .checked-icone {
+                    animation: slide 500ms linear both;
+                     i {
+                        transform: rotate(1turn);
+                    }
+                }
+            }
+            .food-list__name { 
+                margin: 10px auto 10px 10px; 
             }
             .food-list__price {
-                flex: 1;
+                transform: translateX(100%);
+             
+             
             }
             .checked-icone{
                 position: relative;
-                width: 60px;
+                width: 80px;
                 height: 100%;
+                margin-left: 20px;
                 background-color: $tertiary-color;
-                border: 1px solid transparent;
+                border: 0px solid transparent;
                 border-radius: 0px 20px 20px 0px;
                 display: flex;
                 justify-content: center;
@@ -106,13 +126,26 @@ main {
                 font-size: 1.5rem;
                 color: white;
                 font-size: 2rem;
-
+                transform: translateX(100%);
+                i {
+                    transition: transform 500ms;
+                }
             }
-
+            
         }
       }
     }
 }
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%)
+    }
+}
+
 
 .menu-type{
     
@@ -123,7 +156,7 @@ main {
            width: 45px;
             background-color: $tertiary-color;
             border: none;
-            margin-top: -8px;
+            margin-top: -15px;
             height: 2px;
             position: absolute;
             left: 5%;
