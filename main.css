@@ -144,6 +144,24 @@ nav h1 {
           align-items: center;
 }
 
+@media all and (min-width: 1000px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .list-number {
   width: 20px;
   height: 20px;
@@ -170,22 +188,48 @@ nav h1 {
 .restaurants #restaurants {
   position: relative;
   top: 20px;
-  left: 10%;
+  left: 15%;
 }
 
 .restaurants .restaurants-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[2];
+      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-gap: 25px;
+  padding: 20px 5%;
+      grid-template-areas: "a b" "c d";
+}
+
+.restaurants .restaurant-list__one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+.restaurants .restaurant-list__two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+}
+
+.restaurants .restaurant-list__three {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: c;
+}
+
+.restaurants .restaurant-list__four {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: d;
+}
+
+@media all and (max-width: 768px) {
+  .restaurants .restaurants-list {
+    display: block;
+  }
 }
 
 .restaurant {

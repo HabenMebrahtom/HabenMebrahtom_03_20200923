@@ -102,6 +102,12 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    @media all and (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     
 }
 
@@ -123,15 +129,37 @@ nav {
     #restaurants {
         position: relative;
         top: 20px;
-        left: 10%;
+        left: 15%;
     }
     
    .restaurants-list {
-       display: flex; 
-       flex-direction: column;
-       justify-content: space-around;
-       align-items: center;
+       display: grid; 
+       grid-template: repeat(2, 1fr)/ repeat(2, 1fr);
+       grid-gap: 25px;
+       padding: 20px 5%;
+       grid-template-areas: 
+       "a b"
+       "c d";
+       
    } 
+   .restaurant-list__one {
+       grid-area: a;
+   }
+   .restaurant-list__two {
+       grid-area: b;
+   }
+   .restaurant-list__three {
+       grid-area: c;
+   }
+   .restaurant-list__four {
+ grid-area: d;
+   }
+
+   @media all and (max-width: 768px) {
+       .restaurants-list  {
+           display: block;
+       }
+   }
 }   
 
 .restaurant {
@@ -201,5 +229,3 @@ footer {
     }
 
 }
-
-
