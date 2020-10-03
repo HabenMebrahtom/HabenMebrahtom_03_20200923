@@ -75,7 +75,6 @@ main {
 
   
     .menu-list {
-        
     .menu-list__content { 
         display: flex;
         flex-direction: column;
@@ -94,6 +93,9 @@ main {
             box-shadow: 2px 14px 41px -13px rgba(102,97,101,1);
             overflow: hidden;
             cursor: pointer;
+            animation: blink 200ms ease forwards;
+            transform: translateY(-100%);
+            opacity: 0;
             &:hover {
                 color: $primary-color;
                 & > .food-list__price {
@@ -135,6 +137,37 @@ main {
             }
             
         }
+        .food-list__one {
+            animation-delay: 0ms;
+        }
+        .food-list__two {
+            animation-delay: 100ms;
+        }
+        .food-list__three {
+            animation-delay: 200ms;
+        }
+        .food-list__four {
+            animation-delay: 300ms;
+        }
+        .food-list__five {
+            animation-delay: 400ms;
+        }
+        .food-list__six {
+            animation-delay: 500ms;
+        }
+        .food-list__seven {
+            animation-delay: 600ms;
+        }
+        .food-list__eight {
+            animation-delay: 700ms;
+        }
+        .food-list__nine {
+            animation-delay: 800ms;
+        }
+        .food-list__ten {
+            animation-delay: 900ms;
+        }
+
       }
     }
 }
@@ -144,7 +177,25 @@ main {
         transform: translateX(100%);
     }
     100% {
-        transform: translateX(0%)
+        transform: translateX(0%);
+    }
+}
+
+@keyframes blink {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-5px);
+        opacity: .5;
+    }
+
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1; 
     }
 }
 

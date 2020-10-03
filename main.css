@@ -71,7 +71,8 @@ header .logo {
   padding-bottom: 50px;
 }
 
-.sub-header .booking-menu button {
+.sub-header .booking-menu a {
+  text-decoration: none;
   color: white;
   border-style: none;
   padding: 15px 50px;
@@ -85,12 +86,7 @@ header .logo {
   font-size: 1rem;
 }
 
-.sub-header .booking-menu button a {
-  text-decoration: none;
-  color: white;
-}
-
-.sub-header .booking-menu button:focus {
+.sub-header .booking-menu:focus {
   outline: 1px solid transparent;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
   background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
@@ -100,7 +96,7 @@ nav {
   padding: 20px;
 }
 
-nav h1 {
+nav p {
   padding-left: 20px;
 }
 
@@ -186,6 +182,8 @@ nav h1 {
 }
 
 .restaurants #restaurants {
+  font-weight: bolder;
+  font-size: 2rem;
   position: relative;
   top: 20px;
   left: 15%;
@@ -262,13 +260,17 @@ nav h1 {
           align-items: stretch;
 }
 
-.restaurant .restaurant-info #restaurant-name {
+.restaurant .restaurant-info .restaurant-name {
   padding-left: 20px;
 }
 
-.restaurant .restaurant-info #restaurant-name a {
+.restaurant .restaurant-info .restaurant-name a {
   text-decoration: none;
   color: black;
+}
+
+.restaurant .restaurant-info .restaurant-name a:hover {
+  color: #9356DC;
 }
 
 .restaurant .restaurant-info .heart-icon {
@@ -281,8 +283,9 @@ nav h1 {
   color: #FF79DA;
 }
 
-#bold-text {
+.bold-text, nav p {
   font-weight: bolder;
+  font-size: 2rem;
 }
 
 footer {

@@ -49,7 +49,8 @@ header {
      align-items: center;
      flex-direction: column;
      padding-bottom: 50px;
-     button {
+     a {
+        text-decoration: none;
          color: white;
          border-style: none;
          padding: 15px 50px;
@@ -59,9 +60,7 @@ header {
          border-radius: 25px;
          font-weight: bold;
          font-size: 1rem;
-         a {
-             text-decoration: none;
-             color: white;
+         
          }
          
          &:focus{
@@ -71,12 +70,12 @@ header {
          }
      }
  }
-}
 
 nav {
     padding: 20px;
-    h1 {
+    p {
         padding-left: 20px;
+        @extend .bold-text;
     }
 }
 
@@ -127,6 +126,8 @@ nav {
     background-color: rgb(224, 222, 222);
     padding: 40px auto;
     #restaurants {
+        font-weight: bolder;
+        font-size: 2rem;
         position: relative;
         top: 20px;
         left: 15%;
@@ -180,11 +181,14 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
-        #restaurant-name{
+        .restaurant-name{
             padding-left: 20px;
             a {
                 text-decoration: none;
                 color: black;
+                &:hover {
+                    color: $primary-color;
+                }
             }
         }
         .heart-icon {
@@ -199,8 +203,9 @@ nav {
     
 }
 
-#bold-text {
+.bold-text {
     font-weight:  bolder;
+    font-size: 2rem;
 }
 
 footer {

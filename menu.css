@@ -122,6 +122,11 @@ main .menu-list .menu-list__content .food-list {
           box-shadow: 2px 14px 41px -13px #666165;
   overflow: hidden;
   cursor: pointer;
+  -webkit-animation: blink 200ms ease forwards;
+          animation: blink 200ms ease forwards;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
 }
 
 main .menu-list .menu-list__content .food-list:hover {
@@ -183,6 +188,56 @@ main .menu-list .menu-list__content .food-list .checked-icone i {
   transition: transform 500ms, -webkit-transform 500ms;
 }
 
+main .menu-list .menu-list__content .food-list__one {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+main .menu-list .menu-list__content .food-list__two {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+main .menu-list .menu-list__content .food-list__three {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+main .menu-list .menu-list__content .food-list__four {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+main .menu-list .menu-list__content .food-list__five {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+main .menu-list .menu-list__content .food-list__six {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+main .menu-list .menu-list__content .food-list__seven {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+main .menu-list .menu-list__content .food-list__eight {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+main .menu-list .menu-list__content .food-list__nine {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+main .menu-list .menu-list__content .food-list__ten {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
 @-webkit-keyframes slide {
   0% {
     -webkit-transform: translateX(100%);
@@ -202,6 +257,42 @@ main .menu-list .menu-list__content .food-list .checked-icone i {
   100% {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 
