@@ -135,9 +135,9 @@ nav {
     
    .restaurants-list {
        display: grid; 
-       grid-template: repeat(2, 1fr)/ repeat(2, 1fr);
        grid-gap: 25px;
        padding: 20px 5%;
+       grid-template: repeat(2, 1fr)/ repeat(2, 1fr);
        grid-template-areas: 
        "a b"
        "c d";
