@@ -37,7 +37,9 @@ header {
 .image {
     img {
         width: 100%;
-        height: 200px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
     }   
 }
 main { 
@@ -93,8 +95,8 @@ main {
             box-shadow: 2px 14px 41px -13px rgba(102,97,101,1);
             overflow: hidden;
             cursor: pointer;
-            animation: blink 200ms ease forwards;
-            transform: translateY(-100%);
+            animation: blink 400ms ease forwards;
+            transform: translateX(-100%);
             opacity: 0;
             &:hover {
                 color: $primary-color;
@@ -141,31 +143,31 @@ main {
             animation-delay: 0ms;
         }
         .food-list__two {
-            animation-delay: 100ms;
-        }
-        .food-list__three {
             animation-delay: 200ms;
         }
-        .food-list__four {
-            animation-delay: 300ms;
-        }
-        .food-list__five {
+        .food-list__three {
             animation-delay: 400ms;
         }
-        .food-list__six {
-            animation-delay: 500ms;
-        }
-        .food-list__seven {
+        .food-list__four {
             animation-delay: 600ms;
         }
-        .food-list__eight {
-            animation-delay: 700ms;
-        }
-        .food-list__nine {
+        .food-list__five {
             animation-delay: 800ms;
         }
+        .food-list__six {
+            animation-delay: 1000ms;
+        }
+        .food-list__seven {
+            animation-delay: 1200ms;
+        }
+        .food-list__eight {
+            animation-delay: 1400ms;
+        }
+        .food-list__nine {
+            animation-delay: 1600ms;
+        }
         .food-list__ten {
-            animation-delay: 900ms;
+            animation-delay: 1800ms;
         }
 
       }
@@ -183,18 +185,57 @@ main {
 
 @keyframes blink {
     0% {
-        transform: translateY(-10px);
+        transform: translateX(-100%);
         opacity: 0;
+    }
+    10% {
+        transform: translateX(-90%);
+        opacity: .1;
+    }
+
+    20% {
+        transform: translateX(-80%);
+        opacity: .2;
+    }
+
+    30% {
+        transform: translateX(-70%);
+        opacity: .3;
+    }
+
+    40% {
+        transform: translateX(-60%);
+        opacity: .4;
     }
 
     50% {
-        transform: translateY(-5px);
+        transform: translateX(-50%);
         opacity: .5;
+    }
+
+    60% {
+        transform: translateX(-40%);
+        opacity: .6;
+    }
+
+    70% {
+        transform: translateX(-30%);
+        opacity: .7;
+    }
+
+    80% {
+        transform: translateX(-20%);
+        opacity: .8;
+    }
+
+    90% {
+        transform: translateX(-10%);
+        opacity: .9;
     }
 
 
     100% {
-        transform: translateY(0px);
+        transform: translateX(0);
         opacity: 1; 
     }
 }

@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  padding: 30px auto;
+  padding: 30px 0 30px 0;
   width: 100%;
   height: 100px;
   display: -webkit-box;
@@ -140,7 +140,7 @@ nav p {
           align-items: center;
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1024px) {
   .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -178,7 +178,7 @@ nav p {
 
 .restaurants {
   background-color: #e0dede;
-  padding: 40px auto;
+  padding: 40px 0 40px 0;
 }
 
 .restaurants #restaurants {
@@ -239,6 +239,7 @@ nav p {
   background-color: white;
   -webkit-box-shadow: 2px 14px 41px -13px #666165;
           box-shadow: 2px 14px 41px -13px #666165;
+  position: relative;
 }
 
 .restaurant img {
@@ -246,6 +247,31 @@ nav p {
   height: 70%;
   border: 0px solid transparent;
   border-radius: 10px 10px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.restaurant .new-tag {
+  font-weight: bolder;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: #9356DC;
+  background-color: #99E2D0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .restaurant .restaurant-info {
@@ -280,7 +306,7 @@ nav p {
 
 .restaurant .restaurant-info .heart-icon i:hover {
   font-weight: bolder;
-  color: #FF79DA;
+  color: #9356DC;
 }
 
 .bold-text, nav p {
