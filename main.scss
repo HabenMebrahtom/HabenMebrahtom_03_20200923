@@ -4,6 +4,8 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA; 
 $tertiary-color: #99E2D0;
+$gridTp: "repeat(2, 1fr)/repeat(2, 1fr)";
+    
 
 body {
     padding: 0;
@@ -130,14 +132,15 @@ nav {
         font-size: 2rem;
         position: relative;
         top: 20px;
-        left: 15%;
+        left: 10%;
     }
+
     
    .restaurants-list {
        display: grid; 
        grid-gap: 25px;
        padding: 20px 5%;
-       grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+       grid-template: $gridTp;
        grid-template-areas: 
        "a b"
        "c d";

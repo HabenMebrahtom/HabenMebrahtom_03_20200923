@@ -186,7 +186,7 @@ nav p {
   font-size: 2rem;
   position: relative;
   top: 20px;
-  left: 15%;
+  left: 10%;
 }
 
 .restaurants .restaurants-list {
@@ -194,9 +194,7 @@ nav p {
   display: grid;
   grid-gap: 25px;
   padding: 20px 5%;
-  -ms-grid-rows: (1fr)[2];
-  -ms-grid-columns: (1fr)[2];
-      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-template: "repeat(2, 1fr)/repeat(2, 1fr)";
       grid-template-areas: "a b" "c d";
 }
 
@@ -312,7 +310,6 @@ nav p {
 .bold-text, nav p {
   font-weight: bolder;
   font-size: 2rem;
-  padding-left: 10%;
 }
 
 footer {
