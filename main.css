@@ -312,6 +312,7 @@ nav p {
 .bold-text, nav p {
   font-weight: bolder;
   font-size: 2rem;
+  padding-left: 10%;
 }
 
 footer {

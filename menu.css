@@ -128,8 +128,6 @@ main .menu-list .menu-list__content .food-list {
   cursor: pointer;
   -webkit-animation: blink 400ms ease forwards;
           animation: blink 400ms ease forwards;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
   opacity: 0;
 }
 
@@ -154,6 +152,7 @@ main .menu-list .menu-list__content .food-list:hover > .checked-icone i {
 
 main .menu-list .menu-list__content .food-list .food-list__name {
   margin: 10px auto 10px 10px;
+  padding-left: 10px;
 }
 
 main .menu-list .menu-list__content .food-list .food-list__price {
@@ -266,116 +265,72 @@ main .menu-list .menu-list__content .food-list__ten {
 
 @-webkit-keyframes blink {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
     opacity: 0;
   }
   10% {
-    -webkit-transform: translateX(-90%);
-            transform: translateX(-90%);
     opacity: .1;
   }
   20% {
-    -webkit-transform: translateX(-80%);
-            transform: translateX(-80%);
     opacity: .2;
   }
   30% {
-    -webkit-transform: translateX(-70%);
-            transform: translateX(-70%);
     opacity: .3;
   }
   40% {
-    -webkit-transform: translateX(-60%);
-            transform: translateX(-60%);
     opacity: .4;
   }
   50% {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
     opacity: .5;
   }
   60% {
-    -webkit-transform: translateX(-40%);
-            transform: translateX(-40%);
     opacity: .6;
   }
   70% {
-    -webkit-transform: translateX(-30%);
-            transform: translateX(-30%);
     opacity: .7;
   }
   80% {
-    -webkit-transform: translateX(-20%);
-            transform: translateX(-20%);
     opacity: .8;
   }
   90% {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
     opacity: .9;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
     opacity: 1;
   }
 }
 
 @keyframes blink {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
     opacity: 0;
   }
   10% {
-    -webkit-transform: translateX(-90%);
-            transform: translateX(-90%);
     opacity: .1;
   }
   20% {
-    -webkit-transform: translateX(-80%);
-            transform: translateX(-80%);
     opacity: .2;
   }
   30% {
-    -webkit-transform: translateX(-70%);
-            transform: translateX(-70%);
     opacity: .3;
   }
   40% {
-    -webkit-transform: translateX(-60%);
-            transform: translateX(-60%);
     opacity: .4;
   }
   50% {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
     opacity: .5;
   }
   60% {
-    -webkit-transform: translateX(-40%);
-            transform: translateX(-40%);
     opacity: .6;
   }
   70% {
-    -webkit-transform: translateX(-30%);
-            transform: translateX(-30%);
     opacity: .7;
   }
   80% {
-    -webkit-transform: translateX(-20%);
-            transform: translateX(-20%);
     opacity: .8;
   }
   90% {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
     opacity: .9;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
     opacity: 1;
   }
 }
@@ -404,11 +359,13 @@ main .menu-list .menu-list__content .food-list__ten {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .btn button {
   padding: 15px 60px;
-  margin: 20px auto;
+  margin: 20px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-box-shadow: 5px -1px 143px -45px #d4d4d4;

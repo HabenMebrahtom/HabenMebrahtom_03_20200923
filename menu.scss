@@ -96,7 +96,6 @@ main {
             overflow: hidden;
             cursor: pointer;
             animation: blink 400ms ease forwards;
-            transform: translateX(-100%);
             opacity: 0;
             &:hover {
                 color: $primary-color;
@@ -112,6 +111,7 @@ main {
             }
             .food-list__name { 
                 margin: 10px auto 10px 10px; 
+                padding-left: 10px;
             }
             .food-list__price {
                 transform: translateX(100%);
@@ -185,57 +185,46 @@ main {
 
 @keyframes blink {
     0% {
-        transform: translateX(-100%);
         opacity: 0;
     }
     10% {
-        transform: translateX(-90%);
         opacity: .1;
     }
 
     20% {
-        transform: translateX(-80%);
         opacity: .2;
     }
 
     30% {
-        transform: translateX(-70%);
         opacity: .3;
     }
 
     40% {
-        transform: translateX(-60%);
         opacity: .4;
     }
 
     50% {
-        transform: translateX(-50%);
         opacity: .5;
     }
 
     60% {
-        transform: translateX(-40%);
         opacity: .6;
     }
 
-    70% {
-        transform: translateX(-30%);
+    70% {  
         opacity: .7;
     }
 
     80% {
-        transform: translateX(-20%);
         opacity: .8;
     }
 
     90% {
-        transform: translateX(-10%);
         opacity: .9;
     }
 
 
     100% {
-        transform: translateX(0);
         opacity: 1; 
     }
 }
@@ -267,9 +256,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
     button {
         padding: 15px 60px;
-        margin: 20px auto;
+        margin: 20px 0;
         background: linear-gradient($secondary-color, $primary-color);
         box-shadow: 5px -1px 143px -45px rgba(212,212,212,1);
         border: 0px solid transparent;
