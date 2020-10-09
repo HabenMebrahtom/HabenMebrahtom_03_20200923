@@ -110,12 +110,6 @@ main .menu-list .menu-list__content .food-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 120px;
   width: 90%;
   margin: 10px auto;
@@ -135,6 +129,12 @@ main .menu-list .menu-list__content .food-list:hover {
   color: #9356DC;
 }
 
+main .menu-list .menu-list__content .food-list:hover > .food-list__name h3, main .menu-list .menu-list__content .food-list:hover > .food-list__name p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 main .menu-list .menu-list__content .food-list:hover > .food-list__price {
   -webkit-animation: slide 500ms linear both;
           animation: slide 500ms linear both;
@@ -151,23 +151,27 @@ main .menu-list .menu-list__content .food-list:hover > .checked-icone i {
 }
 
 main .menu-list .menu-list__content .food-list .food-list__name {
+  max-width: 50%;
   margin: 10px auto 10px 10px;
   padding-left: 10px;
+  white-space: nowrap;
 }
 
 main .menu-list .menu-list__content .food-list .food-list__price {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .menu-list .menu-list__content .food-list .checked-icone {
-  position: relative;
-  width: 80px;
-  height: 100%;
-  margin-left: 20px;
-  background-color: #79bbab;
-  border: 0px solid transparent;
-  border-radius: 0px 20px 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,6 +181,11 @@ main .menu-list .menu-list__content .food-list .checked-icone {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80px;
+  height: 100%;
+  margin-left: 5px;
+  background-color: #79bbab;
+  border: 0px solid transparent;
   font-size: 1.5rem;
   color: white;
   font-size: 2rem;
@@ -366,20 +375,21 @@ main .menu-list .menu-list__content .food-list__ten {
 .btn button {
   padding: 15px 60px;
   margin: 20px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 5px -1px 143px -45px #d4d4d4;
-          box-shadow: 5px -1px 143px -45px #d4d4d4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
   border: 0px solid transparent;
   border-radius: 35px;
+  -webkit-box-shadow: 5px 15px 34px -9px #4f4c4f;
+          box-shadow: 5px 15px 34px -9px #4f4c4f;
   color: white;
   font-size: 1.5rem;
+  -webkit-transition: background 5s linear;
+  transition: background 5s linear;
 }
 
-.btn button:focus {
-  outline: 0px solid transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#79bbab));
-  background: linear-gradient(#9356DC, #FF79DA, #79bbab);
+.btn button:hover {
+  outline: transparent;
+  background: #FF79DA;
 }
 
 footer {

@@ -1,17 +1,19 @@
 {
-    "name": "HabenMebrahtom_03_20200923",
-    "version": "1.0,0",
-    "description": "",
-    "main": "index.js",
-
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "sass": "node-sass --watch scss -o css"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "node-sass": "^4.14.1"
-    }
+  "name": "habenmebrahtom_03_20200923",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HabenMebrahtom/HabenMebrahtom_03_20200923.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HabenMebrahtom/HabenMebrahtom_03_20200923/issues"
+  },
+  "homepage": "https://github.com/HabenMebrahtom/HabenMebrahtom_03_20200923#readme"
 }

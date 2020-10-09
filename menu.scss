@@ -83,9 +83,7 @@ main {
         justify-content: space-around;
         align-items: center;
           .food-list {
-            display:flex;
-            justify-content: start;
-            align-items: center;
+              display: flex;
             height: 120px;
             width: 90%;
             margin: 10px auto;
@@ -99,6 +97,13 @@ main {
             opacity: 0;
             &:hover {
                 color: $primary-color;
+                & > .food-list__name {
+                    h3, p { 
+                     text-overflow: ellipsis;
+                     white-space: nowrap;
+                     overflow: hidden;
+                    }
+                }
                 & > .food-list__price {
                     animation: slide 500ms linear both;
                 }
@@ -110,25 +115,26 @@ main {
                 }
             }
             .food-list__name { 
+                max-width: 50%;
                 margin: 10px auto 10px 10px; 
                 padding-left: 10px;
+                white-space: nowrap;
             }
             .food-list__price {
                 transform: translateX(100%);
-             
-             
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
             }
             .checked-icone{
-                position: relative;
-                width: 80px;
-                height: 100%;
-                margin-left: 20px;
-                background-color: $tertiary-color;
-                border: 0px solid transparent;
-                border-radius: 0px 20px 20px 0px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                width: 80px;
+                height: 100%;
+                margin-left: 5px;
+                background-color: $tertiary-color;
+                border: 0px solid transparent;
                 font-size: 1.5rem;
                 color: white;
                 font-size: 2rem;
@@ -258,18 +264,20 @@ main {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    
     button {
         padding: 15px 60px;
         margin: 20px 0;
-        background: linear-gradient($secondary-color, $primary-color);
-        box-shadow: 5px -1px 143px -45px rgba(212,212,212,1);
+        background: linear-gradient($primary-color, $secondary-color);
         border: 0px solid transparent;
         border-radius: 35px;
+        box-shadow: 5px 15px 34px -9px rgba(79,76,79,1);
         color: white;
         font-size: 1.5rem;
-        &:focus {
-            outline: 0px solid transparent;
-            background: linear-gradient($primary-color, $secondary-color, $tertiary-color);
+        transition: background 5s linear;
+        &:hover {
+            outline: transparent;
+            background: $secondary-color; 
         }
     }
 

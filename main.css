@@ -78,12 +78,15 @@ header .logo {
   padding: 15px 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 5px -1px 143px -45px #d4d4d4;
-          box-shadow: 5px -1px 143px -45px #d4d4d4;
   border: 0px solid none;
   border-radius: 25px;
   font-weight: bold;
   font-size: 1rem;
+}
+
+.sub-header .booking-menu .btn {
+  -webkit-box-shadow: 5px 15px 34px -9px #4f4c4f;
+          box-shadow: 5px 15px 34px -9px #4f4c4f;
 }
 
 .sub-header .booking-menu:focus {
@@ -93,11 +96,11 @@ header .logo {
 }
 
 nav {
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
 }
 
 nav p {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .nav {
@@ -178,15 +181,13 @@ nav p {
 
 .restaurants {
   background-color: #e0dede;
-  padding: 40px 0 40px 0;
+  padding: 20px 0 20px 0;
 }
 
 .restaurants #restaurants {
   font-weight: bolder;
   font-size: 2rem;
-  position: relative;
-  top: 20px;
-  left: 10%;
+  margin-left: 10%;
 }
 
 .restaurants .restaurants-list {
@@ -299,17 +300,72 @@ nav p {
 
 .restaurant .restaurant-info .heart-icon {
   margin: 20px;
+}
+
+.restaurant .restaurant-info .heart-icon i {
   font-size: 2rem;
+  color: #9356DC;
+  -webkit-animation: color 1s linear alternate forwards;
+          animation: color 1s linear alternate forwards;
+  opacity: 0.5;
 }
 
 .restaurant .restaurant-info .heart-icon i:hover {
   font-weight: bolder;
   color: #9356DC;
+  opacity: 1;
 }
 
-.bold-text, nav p {
+@-webkit-keyframes color {
+  50% {
+    opacity: .5;
+  }
+  60% {
+    opacity: .6;
+  }
+  70% {
+    opacity: .7;
+  }
+  80% {
+    opacity: .8;
+  }
+  90% {
+    opacity: .9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes color {
+  50% {
+    opacity: .5;
+  }
+  60% {
+    opacity: .6;
+  }
+  70% {
+    opacity: .7;
+  }
+  80% {
+    opacity: .8;
+  }
+  90% {
+    opacity: .9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bolder-text, nav p {
   font-weight: bolder;
   font-size: 2rem;
+}
+
+.bold-text {
+  font-weight: bold;
+  line-height: -2px;
 }
 
 footer {
