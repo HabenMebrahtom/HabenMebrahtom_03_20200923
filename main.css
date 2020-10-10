@@ -8,6 +8,67 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  -webkit-animation: screen-show 5s linear forwards;
+          animation: screen-show 5s linear forwards;
+}
+
+@-webkit-keyframes screen-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes screen-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rolling-spinner {
+  width: 100px;
+  height: 100px;
+  border: 5px solid transparent;
+  border-bottom-color: #5151d3;
+  border-top-color: #5151d3;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  -webkit-animation: spinner 2s linear forwards;
+          animation: spinner 2s linear forwards;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
 header {
   padding: 30px 0 30px 0;
   width: 100%;
@@ -89,10 +150,28 @@ header .logo {
           box-shadow: 5px 15px 34px -9px #4f4c4f;
 }
 
-.sub-header .booking-menu:focus {
-  outline: 1px solid transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
-  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
+.sub-header .booking-menu .btn:hover {
+  background-color: linear-gradient(#9356DC, #FF79DA);
+  -webkit-animation: lighten-color 2s linear forwards;
+          animation: lighten-color 2s linear forwards;
+}
+
+@-webkit-keyframes lighten-color {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+
+@keyframes lighten-color {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .5;
+  }
 }
 
 nav {
@@ -298,62 +377,33 @@ nav p {
   color: #9356DC;
 }
 
-.restaurant .restaurant-info .heart-icon {
+.restaurant .restaurant-info .fa-heart {
   margin: 20px;
-}
-
-.restaurant .restaurant-info .heart-icon i {
   font-size: 2rem;
   color: #9356DC;
-  -webkit-animation: color 1s linear alternate forwards;
-          animation: color 1s linear alternate forwards;
-  opacity: 0.5;
 }
 
-.restaurant .restaurant-info .heart-icon i:hover {
+.restaurant .restaurant-info .fa-heart:hover {
   font-weight: bolder;
-  color: #9356DC;
-  opacity: 1;
+  color: #FF79DA;
+  -webkit-animation: filling-color 1s linear;
+          animation: filling-color 1s linear;
 }
 
-@-webkit-keyframes color {
-  50% {
-    opacity: .5;
+@-webkit-keyframes filling-color {
+  from {
+    opacity: 0;
   }
-  60% {
-    opacity: .6;
-  }
-  70% {
-    opacity: .7;
-  }
-  80% {
-    opacity: .8;
-  }
-  90% {
-    opacity: .9;
-  }
-  100% {
+  to {
     opacity: 1;
   }
 }
 
-@keyframes color {
-  50% {
-    opacity: .5;
+@keyframes filling-color {
+  from {
+    opacity: 0;
   }
-  60% {
-    opacity: .6;
-  }
-  70% {
-    opacity: .7;
-  }
-  80% {
-    opacity: .8;
-  }
-  90% {
-    opacity: .9;
-  }
-  100% {
+  to {
     opacity: 1;
   }
 }

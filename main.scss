@@ -13,6 +13,46 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    animation: screen-show 5s linear forwards;
+}
+
+@keyframes screen-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.rolling-spinner {
+    width: 100px;
+    height: 100px;
+    border: 5px solid transparent;
+    border-bottom-color: rgb(81, 81, 211);
+    border-top-color:rgb(81, 81, 211) ;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: spinner 2s linear forwards;
+}
+
+@keyframes spinner {
+    0% {
+        opacity: 1;
+    }
+    100% {
+       opacity: 0;
+       transform: rotate(720deg);
+    }
+}
+
+
 header {
     padding: 30px 0 30px 0;
     width: 100%;
@@ -65,13 +105,20 @@ header {
          }
       .btn {
         box-shadow: 5px 15px 34px -9px rgba(79,76,79,1);
+        &:hover {
+            background-color: linear-gradient($primary-color,$secondary-color);
+            animation: lighten-color 2s linear forwards;
+        }
       }
-         
-         &:focus{
-             outline: 1px solid transparent;
-             background: linear-gradient($primary-color, $secondary-color, $tertiary-color);
-             
-         }
+     }
+ }
+
+ @keyframes lighten-color {
+     0% {
+         opacity: 1;
+     }
+     100% {
+         opacity: .5;
      }
  }
 
@@ -212,18 +259,15 @@ nav {
                 }
             }
         }
-        .heart-icon {
+        .fa-heart {
             margin: 20px;
-            i { 
             font-size: 2rem;
-            color:$primary-color;
-            animation: color 1s linear alternate forwards;
-            opacity: 0.5;
-            }
-            i:hover {
-            font-weight: bolder;
             color: $primary-color;
-            opacity: 1;
+        
+            &:hover {
+            font-weight: bolder;
+            color: $secondary-color;
+            animation: filling-color 1s linear;
             }
         
         }
@@ -231,27 +275,14 @@ nav {
     
 }
 
-@keyframes color {
-    50% {
-        opacity: .5;
+@keyframes filling-color {
+    from {
+      opacity: 0;
     }
-    60% {
-        opacity: .6;
+    to {
+      opacity: 1;
     }
-    70% {
-        opacity: .7;
-    }
-    80% {
-        opacity: .8;
-    }
-    90% {
-        opacity: .9;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
+  }
 
 .bolder-text {
     font-weight:  bolder;

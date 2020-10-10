@@ -383,13 +383,34 @@ main .menu-list .menu-list__content .food-list__ten {
           box-shadow: 5px 15px 34px -9px #4f4c4f;
   color: white;
   font-size: 1.5rem;
-  -webkit-transition: background 5s linear;
-  transition: background 5s linear;
 }
 
 .btn button:hover {
   outline: transparent;
-  background: #FF79DA;
+  -webkit-animation: lighten-color 1s linear forwards;
+          animation: lighten-color 1s linear forwards;
+}
+
+.btn button:focus {
+  outline: transparent;
+}
+
+@-webkit-keyframes lighten-color {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: .75;
+  }
+}
+
+@keyframes lighten-color {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: .75;
+  }
 }
 
 footer {
