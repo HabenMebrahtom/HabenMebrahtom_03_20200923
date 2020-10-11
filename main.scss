@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    animation: screen-show 5s linear forwards;
+    animation: screen-show 2s linear forwards;
 }
 
 @keyframes screen-show {
@@ -39,7 +39,7 @@ body {
     left: 50%;
     margin-top: -50px;
     margin-left: -50px;
-    animation: spinner 2s linear forwards;
+    animation: spinner 2s forwards;
 }
 
 @keyframes spinner {

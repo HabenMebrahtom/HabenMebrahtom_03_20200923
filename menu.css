@@ -400,7 +400,7 @@ main .menu-list .menu-list__content .food-list__ten {
     opacity: 1;
   }
   to {
-    opacity: .75;
+    opacity: .5;
   }
 }
 
@@ -409,7 +409,7 @@ main .menu-list .menu-list__content .food-list__ten {
     opacity: 1;
   }
   to {
-    opacity: .75;
+    opacity: .5;
   }
 }
 

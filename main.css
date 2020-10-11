@@ -9,8 +9,8 @@ body {
 }
 
 .container {
-  -webkit-animation: screen-show 5s linear forwards;
-          animation: screen-show 5s linear forwards;
+  -webkit-animation: screen-show 2s linear forwards;
+          animation: screen-show 2s linear forwards;
 }
 
 @-webkit-keyframes screen-show {
@@ -43,8 +43,8 @@ body {
   left: 50%;
   margin-top: -50px;
   margin-left: -50px;
-  -webkit-animation: spinner 2s linear forwards;
-          animation: spinner 2s linear forwards;
+  -webkit-animation: spinner 2s forwards;
+          animation: spinner 2s forwards;
 }
 
 @-webkit-keyframes spinner {
