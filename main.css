@@ -151,7 +151,8 @@ header .logo {
 }
 
 .sub-header .booking-menu .btn:hover {
-  background-color: linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-animation: lighten-color 2s linear forwards;
           animation: lighten-color 2s linear forwards;
 }
@@ -415,7 +416,6 @@ nav p {
 
 .bold-text {
   font-weight: bold;
-  line-height: -2px;
 }
 
 footer {

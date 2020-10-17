@@ -26,7 +26,7 @@ header {
         top: 30px;
         left: 30px;
         font-size: 1.5rem;
-        font-weight: 700px;
+        font-weight: bold;
         text-decoration: none;      
     }
     .logo {
@@ -71,7 +71,6 @@ main {
         i:hover {
             font-weight: bolder;
             color: $secondary-color;
-            box-shadow: linear-gradient(to right, $primary-color);
         }
     }
 
@@ -119,6 +118,7 @@ main {
                 margin: 10px auto 10px 10px; 
                 padding-left: 10px;
                 white-space: nowrap;
+            
             }
             .food-list__price {
                 transform: translateX(100%);

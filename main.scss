@@ -106,7 +106,7 @@ header {
       .btn {
         box-shadow: 5px 15px 34px -9px rgba(79,76,79,1);
         &:hover {
-            background-color: linear-gradient($primary-color,$secondary-color);
+            background: linear-gradient($primary-color,$secondary-color);
             animation: lighten-color 2s linear forwards;
         }
       }
@@ -290,7 +290,6 @@ nav {
 }
 .bold-text {
     font-weight: bold;
-    line-height: -2px;
 }
 
 footer {

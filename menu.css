@@ -31,7 +31,7 @@ header .fa-arrow-left {
   top: 30px;
   left: 30px;
   font-size: 1.5rem;
-  font-weight: 700px;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -87,8 +87,6 @@ main .restaurant-name i {
 main .restaurant-name i:hover {
   font-weight: bolder;
   color: #FF79DA;
-  -webkit-box-shadow: linear-gradient(to right, #9356DC);
-          box-shadow: linear-gradient(to right, #9356DC);
 }
 
 main .menu-list .menu-list__content {
